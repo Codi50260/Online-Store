@@ -1,19 +1,26 @@
-fetch('http://localhost/HelloWorld/Online-Store/products')
-  .then(response => response.json())//return object as a json text
-  .then(data => console.log(data));//using arrow function inside chained .then()
+fetch("http://localhost/HelloWorld/Online-Store/php/products")
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("NETWORK RESPONSE ERROR");
+    }
+  })
+  .then(data => {
+    // console.log(data);
+    displayProduct(data)
+  })
+  .catch((error) => console.error("FETCH ERROR:", error));
 
-// const data = {
-//   "product_id": 10,
-//   "product_name": "testing",
-//   "product_price": 500,
-//   "product_rating": "0 Stars",
-//   "image_path": "dir/here"
-// } //the object we'll replace it with
+function displayProduct(data) {
+  const product = data[0];
 
-// fetch('http://localhost/HelloWorld/Online-Store/products', {
-// method: 'PUT',
-// headers: {
-//   'Content-Type': 'application/json',
-// },
-// body: JSON.stringify(data), //parsing object variable created above
-// })
+  const name = document.getElementById('name');
+  name.innerHTML = product.product_name;
+
+  const price = document.getElementById('price');
+  price.innerHTML = product.product_price;
+
+  const image = document.getElementById("img");
+  image.src = product.image_path;
+}  
