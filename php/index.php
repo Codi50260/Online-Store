@@ -1,11 +1,11 @@
 <?php
  
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
 $app = new Slim\App();
 
 $app->get("/products",function(){
-    require_once 'php/connect.php';// Calling the database connection filerequire_once 'db.php';// Calling the database connection file
+    require_once 'connect.php';// Calling the database connection filerequire_once 'db.php';// Calling the database connection file
 
     $query = "select * from products";// SQL query
     $result = $conn->query($query);
