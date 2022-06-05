@@ -22,6 +22,7 @@
     
     <!-- Scripts -->
     <script src="js/displayProducts/shopProducts-p1.js"></script>
+    <script src="js/displayProducts/shopFilters.js"></script>
 </head>
 
 <body>
@@ -135,32 +136,32 @@
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" checked id="price-all">
                             <label class="custom-control-label" for="price-all">All Prices</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="allPrices"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="price-1">
                             <label class="custom-control-label" for="price-1">R0 - R1 000</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="less1000"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="price-2">
                             <label class="custom-control-label" for="price-2">R1 000 - R5 000</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="less5000"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="price-3">
                             <label class="custom-control-label" for="price-3">R5 000 - R10 000</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="less10000"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="price-4">
                             <label class="custom-control-label" for="price-4">R10 000 - R20 000</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="less20000"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
                             <input type="checkbox" class="custom-control-input" id="price-5">
                             <label class="custom-control-label" for="price-5">R20 000 +</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="over20000"></span>
                         </div>
                     </form>
                 </div>
@@ -173,32 +174,37 @@
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" checked id="color-all">
                             <label class="custom-control-label" for="price-all">All Ratings</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="allRatings"></span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-1">
+                            <label class="custom-control-label" for="color-1">0 Star</label>
+                            <span class="badge border font-weight-normal" id="0Star"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="color-1">
                             <label class="custom-control-label" for="color-1">1 Star</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="1Star"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="color-2">
                             <label class="custom-control-label" for="color-2">2 Star</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="2Star"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="color-3">
                             <label class="custom-control-label" for="color-3">3 Star</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="3Star"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="color-4">
                             <label class="custom-control-label" for="color-4">4 Star</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="4Star"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
                             <input type="checkbox" class="custom-control-input" id="color-5">
                             <label class="custom-control-label" for="color-5">5 Star</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="5Star"></span>
                         </div>
                     </form>
                 </div>
@@ -211,27 +217,37 @@
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" checked id="size-all">
                             <label class="custom-control-label" for="size-all">All Categories</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="allCategories"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="size-1">
                             <label class="custom-control-label" for="size-1">Apple Products</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <span class="badge border font-weight-normal" id="cateApple"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="size-2">
-                            <label class="custom-control-label" for="size-2">Headphones / Microphones</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <label class="custom-control-label" for="size-2">Speakers / Microphones</label>
+                            <span class="badge border font-weight-normal" id="cateSound"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="size-3">
-                            <label class="custom-control-label" for="size-3">Desktops / Laptops</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <label class="custom-control-label" for="size-3">Computers / Consoles</label>
+                            <span class="badge border font-weight-normal" id="catePC"></span>
                         </div>
                         <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                             <input type="checkbox" class="custom-control-input" id="size-4">
-                            <label class="custom-control-label" for="size-4">TV's / Monitors</label>
-                            <span class="badge border font-weight-normal"># here</span>
+                            <label class="custom-control-label" for="size-4">Computer Accessories</label>
+                            <span class="badge border font-weight-normal" id="cateTV"></span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-4">
+                            <label class="custom-control-label" for="size-4">Office Equipment</label>
+                            <span class="badge border font-weight-normal" id="cateOffice"></span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-4">
+                            <label class="custom-control-label" for="size-4">Other Devices</label>
+                            <span class="badge border font-weight-normal" id="cateOther"></span>
                         </div>
                     </form>
                 </div>
