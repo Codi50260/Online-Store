@@ -42,6 +42,7 @@ function displayProduct(data, i) {
 
   const temp6 = document.createElement("a");
   temp6.className = "btn btn-outline-dark btn-square";
+  temp6.href = "cart.html"
   temp5.appendChild(temp6);
 
   const temp7 = document.createElement("i");
