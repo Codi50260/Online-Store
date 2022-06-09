@@ -49,6 +49,15 @@ function displayProduct(data, i) {
   temp7.className = "fa fa-shopping-cart";
   temp6.appendChild(temp7);
 
+  const temp16 = document.createElement("a");
+  temp16.className = "btn btn-outline-dark btn-square";
+  temp16.href = "cart.html"
+  temp5.appendChild(temp16);
+
+  const temp17 = document.createElement("i");
+  temp17.className = "fa fa-eye";
+  temp16.appendChild(temp17);
+
   const temp8 = document.createElement("div");
   temp8.className = "text-center py-4";
   temp2.appendChild(temp8);
