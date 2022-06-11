@@ -40,24 +40,37 @@ function displayProduct(data, i) {
   temp5.className = "product-action";
   temp3.appendChild(temp5);
 
-  const temp6 = document.createElement("a");
+  const temp18 = document.createElement("form");
+  temp18.action = "cart.html";
+  temp5.appendChild(temp18);
+
+  const temp6 = document.createElement("button");
   temp6.className = "btn btn-outline-dark btn-square";
-  temp6.href = "cart.html"
-  temp5.appendChild(temp6);
+  temp18.appendChild(temp6);
 
   const temp7 = document.createElement("i");
   temp7.className = "fa fa-shopping-cart";
   temp6.appendChild(temp7);
 
-  const temp16 = document.createElement("a");
+  const temp19 = document.createElement("form");
+  temp19.action = "php/post_data.php";
+  temp19.method = "post";
+  temp5.appendChild(temp19);
+
+  const temp20 = document.createElement("input");
+  temp20.name = "id";
+  temp20.value = i + 1;
+  temp20.style = "display: none";
+  temp19.appendChild(temp20);
+
+  const temp16 = document.createElement("button");
   temp16.className = "btn btn-outline-dark btn-square";
-  temp16.href = "cart.html"
-  temp5.appendChild(temp16);
+  temp19.appendChild(temp16);
 
   const temp17 = document.createElement("i");
   temp17.className = "fa fa-eye";
   temp16.appendChild(temp17);
-  
+
   const temp8 = document.createElement("div");
   temp8.className = "text-center py-4";
   temp2.appendChild(temp8);
