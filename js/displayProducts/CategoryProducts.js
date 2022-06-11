@@ -1,19 +1,7 @@
-// $('input[type="checkbox"]').on('change', function() {
-//   $('input[name="' + this.name + '"]').not(this).prop('checked', false);
-// });
-
 $("input:checkbox").on('click', function() {
-  // in the handler, 'this' refers to the box clicked on
   var $box = $(this);
-  console.log($box);
   if ($box.is(":checked")) {
-    console.log("is checked");
-    // the name of the box is retrieved using the .attr() method
-    // as it is assumed and expected to be immutable
     var group = "input:checkbox[name='" + $box.attr("name") + "']";
-    console.log(group);
-    // the checked state of the group/box on the other hand will change
-    // and the current value is retrieved using .prop() method
     $(group).prop("checked", false);
   } else {
     $box.prop("checked", false);
@@ -231,19 +219,32 @@ function structure(product, i){
   temp5.className = "product-action";
   temp3.appendChild(temp5);
 
-  const temp6 = document.createElement("a");
+  const temp18 = document.createElement("form");
+  temp18.action = "cart.html";
+  temp5.appendChild(temp18);
+
+  const temp6 = document.createElement("button");
   temp6.className = "btn btn-outline-dark btn-square";
-  temp6.href = "cart.html"
-  temp5.appendChild(temp6);
+  temp18.appendChild(temp6);
 
   const temp7 = document.createElement("i");
   temp7.className = "fa fa-shopping-cart";
   temp6.appendChild(temp7);
+  
+  const temp19 = document.createElement("form");
+  temp19.action = "php/post_data.php";
+  temp19.method = "post";
+  temp5.appendChild(temp19);
 
-  const temp16 = document.createElement("a");
+  const temp20 = document.createElement("input");
+  temp20.name = "id";
+  temp20.value = i + 1;
+  temp20.style = "display: none";
+  temp19.appendChild(temp20);
+
+  const temp16 = document.createElement("button");
   temp16.className = "btn btn-outline-dark btn-square";
-  temp16.href = "cart.html"
-  temp5.appendChild(temp16);
+  temp19.appendChild(temp16);
 
   const temp17 = document.createElement("i");
   temp17.className = "fa fa-eye";
