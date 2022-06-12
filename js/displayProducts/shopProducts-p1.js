@@ -42,8 +42,15 @@ function displayProduct(data, i) {
   temp3.appendChild(temp5);
 
   const temp18 = document.createElement("form");
-  temp18.action = "cart.html";
+  temp18.action = "php/post_cart.php";
+  temp18.method = "post";
   temp5.appendChild(temp18);
+
+  const temp21 = document.createElement("input");
+  temp21.name = "id";
+  temp21.value = i + 1;
+  temp21.style = "display: none";
+  temp18.appendChild(temp21);
 
   const temp6 = document.createElement("button");
   temp6.className = "btn btn-outline-dark btn-square";
@@ -54,7 +61,7 @@ function displayProduct(data, i) {
   temp6.appendChild(temp7);
 
   const temp19 = document.createElement("form");
-  temp19.action = "php/post_data.php";
+  temp19.action = "php/post_individual_product.php";
   temp19.method = "post";
   temp5.appendChild(temp19);
 
