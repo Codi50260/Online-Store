@@ -30,6 +30,7 @@ fetch("http://localhost/HelloWorld/Online-Store/php/individual_product")
 function displayInfo(product){
     document.getElementById('prod_name').innerHTML = product.product_name;
     document.getElementById('prod_name2').innerHTML = product.product_name;
+    document.getElementById('prod_name3').value = product.product_name;
 
     document.getElementById('img1').src = product.image_path_1;
     document.getElementById('img2').src = product.image_path_2;
