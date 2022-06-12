@@ -1,3 +1,17 @@
+fetch("http://localhost/HelloWorld/Online-Store/php/cart")
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("NETWORK RESPONSE ERROR");
+    }
+  })
+  .then(data => {
+    document.getElementById('numCart').innerHTML = data.length;
+    document.getElementById('numCart2').innerHTML = data.length;
+  })
+  .catch((error) => console.error("FETCH ERROR:", error));
+
 fetch("http://localhost/HelloWorld/Online-Store/php/products")
   .then((response) => {
     if (response.ok) {

@@ -10,6 +10,8 @@ fetch("http://localhost/HelloWorld/Online-Store/php/cart")
     for (let i = 0; i < data.length; i++) {
         displayInfo(data, i);
     }
+    document.getElementById('numCart').innerHTML = data.length;
+    document.getElementById('numCart2').innerHTML = data.length;
     grandTotal(data.length);
   })
   .catch((error) => console.error("FETCH ERROR:", error));
