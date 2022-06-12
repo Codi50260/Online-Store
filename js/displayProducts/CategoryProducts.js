@@ -232,7 +232,7 @@ function structure(product, i){
   temp6.appendChild(temp7);
   
   const temp19 = document.createElement("form");
-  temp19.action = "php/post_data.php";
+  temp19.action = "php/post_individual_product.php";
   temp19.method = "post";
   temp5.appendChild(temp19);
 

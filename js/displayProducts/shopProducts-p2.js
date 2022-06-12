@@ -7,7 +7,8 @@ fetch("http://localhost/HelloWorld/Online-Store/php/products")
     }
   })
   .then(data => {
-    for (let i = 12; i < 24; i++) {
+    let maxPoductsPerPage = 24;
+    for (let i = 12; i < maxPoductsPerPage; i++) {
       displayProduct(data, i);
     }
   })
@@ -53,7 +54,7 @@ function displayProduct(data, i) {
   temp6.appendChild(temp7);
 
   const temp19 = document.createElement("form");
-  temp19.action = "php/post_data.php";
+  temp19.action = "php/post_individual_product.php";
   temp19.method = "post";
   temp5.appendChild(temp19);
 
