@@ -15,9 +15,9 @@ Whats expected:
 ✓ Push your changes to your repository. Remember to push constantly. Use branching and merging for new features.
 ✓ Your website must be responsive, clear and with neat CSS selectors, working across mobile, tablet, and desktop. 
 ✓ Homepage - with banner/hero/background_image, featured product section, upcoming collection
-• About page - include team photos
+✓ About page - include team photos
 ✓ Lookbook/Gallery page - images to have a subtle zoom-in effect on hover and when you click on them to open in JavaScript gallery
-• Contact Page - must have a Google map showing the location of the organisation (a contact form that works by adding sanitized entries to a MySQL database)
+✓ Contact Page - must have a Google map showing the location of the organisation (a contact form that works by adding sanitized entries to a MySQL database)
 ✓ The navbar must be static or fixed and/or it must be a sticky navbar
 ✓ Add a logo to the header
 ✓ Back to Top button/icon - must be a smooth scroll
