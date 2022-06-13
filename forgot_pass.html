@@ -21,7 +21,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -29,12 +29,12 @@
 					<img src="img\welcome_img.gif" alt="IMG">
 				</div>
 
-				<div class="login100-form validate-form" name="search-theme-form">
+				<form class="login100-form validate-form" method="post" action="php/resetPassword.php">
 					<span class="login100-form-title">
-						User Login
+						Forgot Password
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: Mark@gmail.com">
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -42,51 +42,57 @@
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password cannot be empty">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+					<div class="wrap-input100 validate-input" data-validate = "Security Question cannot be empty">
+						<select class="input100" name="question" style="color: #999">
+							<option value="" disabled selected>Security Question</option>
+							<option value="What year did you graduate">What year did you graduate?</option>
+							<option value="What is the name of your first pet">What is the name of your first pet?</option>
+							<option value="Where did you meet your spouse">Where did you meet your spouse?</option>
+						</select>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-question" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Answer cannot be empty">
+						<input class="input100" type="password" name="sec_pass" placeholder=" Security Answer">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<p class="tooltiptext" id="error" style="visibility: hidden; color: #D8000C; background-color: #FFBABA; text-align: center; border-radius: 25px;">Email or Password Incorrect</p>
+					<br>
 
+					<div class="wrap-input100 validate-input" data-validate = "New Password cannot be empty">
+						<input class="input100" type="password" name="new_pass" placeholder=" New Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="check()">
-							Login
+						<button type='submit' class="login100-form-btn">
+							Submit
 						</button>
 					</div>
 
-					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="forgot_pass.html">
-							Username / Password?
-						</a>
-					</div>
-
-					<div class="text-center p-t-12">
-						<span class="txt1">
-							Remove
-						</span>
-						<a class="txt2" href="deleteAccount.html">
-							Account?
-						</a>
-					</div>
-
 					<div class="text-center p-t-136">
-						<a class="txt2" href="sign_up.html">
-							Create your Account
+						<a class="txt2" href="index.html">
+							Back to Sign-In
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
+	
+	
 
+	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -103,9 +109,6 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
-	<!-- Template Javascript -->
-    <script src="js/myJS/account.js"></script>
 
 </body>
 </html>
