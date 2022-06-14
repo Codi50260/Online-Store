@@ -37,9 +37,9 @@ If any time throughout your shopping experience, you can simply sign out at the 
 
 We hope that you had an amazing time with us and come again soon!
 
-
-
+-
 Specifications:
+-
 
 To view the store, 
 clone this repo into a folder; start WAMP or MAMP; type localhost/"directory to your folder here"
