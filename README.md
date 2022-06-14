@@ -24,7 +24,7 @@ We trully have some amazing staff.
 At the Shop page is where all the wonders take place.
 You will be shown several products on your screen at once, but dont be frightend as you can easily filter what products you see just by pressing on one of the filter buttons on the left.
 You can also move on to the next pages to see what else we have in store.
--
+
 Some keen eyed of you will see that on each product you can view a full screen page of that product and get more details about it, you can also add it to your cart.
 
 Lastly we have the Contact page, here you can give us any recommendations or just want to get in touch with us. 
