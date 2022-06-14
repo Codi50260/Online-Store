@@ -47,6 +47,9 @@ function checkName(){
 
         if (user.logged_in == "True"){
             document.getElementById("username").innerHTML = user.user_name;
+
+            document.getElementById("nameBottom").innerHTML = user.user_name;
+            document.getElementById("emailBottom").innerHTML = user.user_email;
         }
     }
 }
