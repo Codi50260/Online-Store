@@ -10,10 +10,10 @@ We have it all.
 
 If you are interested in viewing what we have available create an account with us and login!
 You will be greeted with a few options:
-Home page
-About page
-Shop page
-Contact Page
+# Home page
+# About page
+# Shop page
+# Contact Page
 
 At the Home page, you will see all the newest products we have in stock as well as some savings.
 We even have a few categories you can click on to take you to the store page.
