@@ -1,4 +1,4 @@
-fetch("http://localhost/HelloWorld/Online-Store/php/cart")
+fetch("php/cart")
   .then((response) => {
     if (response.ok) {
       return response.json();
@@ -12,7 +12,7 @@ fetch("http://localhost/HelloWorld/Online-Store/php/cart")
   })
   .catch((error) => console.error("FETCH ERROR:", error));
 
-fetch("http://localhost/HelloWorld/Online-Store/php/products")
+fetch("php/products")
   .then((response) => {
     if (response.ok) {
       return response.json();

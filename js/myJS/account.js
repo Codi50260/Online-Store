@@ -1,5 +1,5 @@
 function check(){
-    fetch("http://localhost/HelloWorld/Online-Store/php/users")
+    fetch("php/users")
         .then((response) => {
             if (response.ok) {
             return response.json();
@@ -27,7 +27,7 @@ function check(){
 }
 
 function checkName(){
-    fetch("http://localhost/HelloWorld/Online-Store/php/users")
+    fetch("php/users")
         .then((response) => {
             if (response.ok) {
             return response.json();
@@ -55,7 +55,7 @@ function checkName(){
 }
 
 function signOut(){
-    fetch("http://localhost/HelloWorld/Online-Store/php/users")
+    fetch("php/users")
         .then((response) => {
             if (response.ok) {
             return response.json();

@@ -1,4 +1,4 @@
-fetch("http://localhost/HelloWorld/Online-Store/php/cart")
+fetch("php/cart")
   .then((response) => {
     if (response.ok) {
       return response.json();
@@ -23,7 +23,7 @@ $("input:checkbox").on('click', function() {
 });
 
 function getProducts(str){
-  fetch("http://localhost/HelloWorld/Online-Store/php/products")
+  fetch("php/products")
     .then((response) => {
       if (response.ok) {
         return response.json();

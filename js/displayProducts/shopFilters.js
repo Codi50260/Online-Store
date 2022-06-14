@@ -1,4 +1,4 @@
-fetch("http://localhost/HelloWorld/Online-Store/php/products")
+fetch("php/products")
   .then((response) => {
     if (response.ok) {
       return response.json();
