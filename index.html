@@ -29,7 +29,7 @@
 					<img src="img\welcome_img.gif" alt="IMG">
 				</div>
 
-				<div class="login100-form validate-form" name="search-theme-form">
+				<form class="login100-form validate-form" name="search-theme-form" id="form_submit" action="php/signed_in.php" method="post">
 					<span class="login100-form-title">
 						User Login
 					</span>
@@ -53,7 +53,7 @@
 					<p class="tooltiptext" id="error" style="visibility: hidden; color: #D8000C; background-color: #FFBABA; text-align: center; border-radius: 25px;">Email or Password Incorrect</p>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="check()">
+						<button type="button" class="login100-form-btn" onclick="check()">
 							Login
 						</button>
 					</div>
