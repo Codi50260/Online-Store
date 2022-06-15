@@ -21,10 +21,10 @@ function check(){
         const password = document.getElementById('password').value;
 
         if (user.user_email == email && user.user_password == password){
-            document.getElementById("error").style.visibility = "hidden";
+            document.getElementById("error").style.display = "none";
             document.getElementById("form_submit").submit();
         } else{
-            document.getElementById("error").style.visibility = "visible";
+            document.getElementById("error").style.display = "block";
         }
     }
 }
