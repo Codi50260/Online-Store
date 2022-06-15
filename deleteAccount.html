@@ -29,13 +29,13 @@
 					<img src="img\welcome_img.gif" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" method="post" action="php/deleteAccount.php">
+				<form class="login100-form validate-form" id="form_submit" method="post" action="php/deleteAccount.php">
 					<span class="login100-form-title">
 						Delete Account
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: Mark@gmail.com">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="email" placeholder="Email" id="email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -43,15 +43,17 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password cannot be empty">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="pass" placeholder="Password" id="password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+
+					<p class="tooltiptext" id="error" style="visibility: hidden; color: #D8000C; background-color: #FFBABA; text-align: center; border-radius: 25px;">Email or Password Incorrect</p>
 					
 					<div class="container-login100-form-btn">
-						<button type='submit' class="login100-form-btn">
+						<button type="button" class="login100-form-btn" onclick="check()">
 							Submit
 						</button>
 					</div>
@@ -86,6 +88,9 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+	<!-- Template Javascript -->
+    <script src="js/myJS/account.js"></script>
 
 </body>
 </html>
