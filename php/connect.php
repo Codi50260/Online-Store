@@ -1,9 +1,9 @@
 <?php
 // Storing our mysqli class parameters in variables
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "online_store";
+$servername = "sql11.freesqldatabase.com";
+$username = "sql11500241";
+$password = "3IykRcZZTd";
+$dbname = "sql11500241";
 
 // Using the above variables as parameter values
 $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
